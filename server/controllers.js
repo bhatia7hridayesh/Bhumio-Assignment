@@ -143,8 +143,8 @@ export const sendFileToMail = async (req, res) => {
   let transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "hridayeshbhatia2", 
-      pass: "hegoavgghswsermy", 
+      user: "",  //add your gmail username (emailId before @gmail.com)
+      pass: "", // Create an app password from your gmail account
     },
   });
   const attachments = files.map((file) => { return{
