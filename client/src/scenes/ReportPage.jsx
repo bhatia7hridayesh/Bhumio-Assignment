@@ -140,7 +140,7 @@ function ReportPage() {
                         />
                     </TableCell>
                     <TableCell align="center">{row.filePath}</TableCell>
-                    <TableCell align="center">{row.createdAt}</TableCell>
+                    <TableCell align="center">{row.createdAt.slice(0, 10)}</TableCell>
                     
                     <TableCell align="center">
                         
